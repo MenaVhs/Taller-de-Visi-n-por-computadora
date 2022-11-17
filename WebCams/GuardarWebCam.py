@@ -1,10 +1,8 @@
 import cv2 as cv 
-import os # operating sys
 
 # Connecting to a webcam
 
-# capture = cv.VideoCapture(0)
-capture = cv.VideoCapture(os.path.join('RataOscuraAvi.avi'))
+capture = cv.VideoCapture(0)
 
 salida = cv.VideoWriter('Rata.avi', cv.VideoWriter_fourcc(*'XVID'), 15, (640, 480))
 
